@@ -86,7 +86,7 @@ body{
 
 .my-courses{
   /* border:  2px solid red; */
-  transform: translateZ(150px);
+  transform: translateY(150px);
   opacity: 0;
   transition: 1s all ease;
 }
@@ -375,13 +375,13 @@ body{
 
 .hall-of-fame{
   /* border: 2px solid red; */
-  transform: translateZ(150px);
+  transform: translateY(150px);
   opacity: 0;
   transition: 1s all ease;
 }
 
 .techvengers{
-  transform: translateZ(150px);
+  transform: translateY(150px);
   opacity: 0;
   transition: 1s all ease;
 }
