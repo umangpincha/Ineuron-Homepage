@@ -32,8 +32,14 @@ body{
     border-radius: 10px;
     margin-top: 5%;
     box-shadow: 0 10px 10px rgba(13, 13, 45, 0.4);
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
 }
-
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
 .my-box .my-box-inside{
      /* border: 2px solid red; */
      display: flex;
@@ -75,6 +81,14 @@ body{
     text-align: center;
     margin-top: 5rem;
     margin-bottom: 5rem;
+}
+
+
+.my-courses{
+  /* border:  2px solid red; */
+  transform: translateZ(150px);
+  opacity: 0;
+  transition: 1s all ease;
 }
 
 .my-courses .btn{
@@ -356,4 +370,18 @@ body{
     margin-right:0;
     font-weight:600
   }
+}
+
+
+.hall-of-fame{
+  /* border: 2px solid red; */
+  transform: translateZ(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.techvengers{
+  transform: translateZ(150px);
+  opacity: 0;
+  transition: 1s all ease;
 }

@@ -12,6 +12,25 @@
     />
     <link rel="icon" type="image/png" href="./images/favicon.webp"/>
     <link rel="stylesheet" href="./css/style.css" />
+    <script>
+      function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+  </script>
   </head>
   <body>
     <!-- navbar start -->
@@ -107,7 +126,7 @@
 
     <!-- card start -->
     <div class="my-card">
-      <div class="my-box">
+      <div class="my-box reveal">
         <div class="my-text">
           <h2 class="my-text">Our journey so far</h2>
         </div>
@@ -144,7 +163,8 @@
     </div>
 
 
-    <div class="my-courses">
+    
+    <div class="my-courses reveal">
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
               <div class="card">
@@ -185,8 +205,8 @@
         <div class="first-sec2">
           <h2>Data Science</h2>
         </div>
-      </div>
-    <div class="my-courses">
+    </div>
+    <div class="my-courses reveal">
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
               <div class="card">
@@ -229,7 +249,7 @@
       </div>
 
 
-      <div class="hall-of-fame">
+      <div class="hall-of-fame reveal">
         <div class="row row-cols-1 row-cols-md-4 g-4">
             <div class="col">
               <div class="card">
@@ -276,7 +296,7 @@
         </div>
       </div>
 
-      <div class="techvengers">
+      <div class="techvengers reveal">
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
               <div class="card" style="width: 18rem;">
@@ -343,7 +363,7 @@
       
 
         <!-- Site footer -->
-    <footer class="site-footer">
+    <footer class="site-footer reveal">
         <div class="container">
           <div class="row">
             <div class="col-sm-12 col-md-6">
